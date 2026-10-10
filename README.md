@@ -46,7 +46,31 @@ python -m pip install -e ".[dev,qiskit]"
 - `qaoa_reliability.exact`: exact reference solvers for pilot-sized instances.
 - `qaoa_reliability.features`: documented, table-ready graph features.
 
+## Data-foundation example
+
+```python
+from qaoa_reliability.exact.maxcut import solve_exact_maxcut
+from qaoa_reliability.features import extract_graph_features
+from qaoa_reliability.graphs.generators import generate_graph
+from qaoa_reliability.graphs.schema import GraphGenerationSpec
+
+spec = GraphGenerationSpec(
+    family="erdos_renyi",
+    n_nodes=8,
+    seed=42,
+    parameters={"edge_probability": 0.4},
+)
+
+record = generate_graph(spec)
+exact = solve_exact_maxcut(record)
+features = extract_graph_features(record)
+
+print(record.graph_id, exact.optimum, features.to_dict())
+```
+
+Undefined assortativity and disconnected-graph diameter are represented by
+`None`; degree standard deviation uses the population convention (`ddof=0`).
+
 ## License
 
 This project is licensed under the MIT License. See [`LICENSE`](LICENSE).
-

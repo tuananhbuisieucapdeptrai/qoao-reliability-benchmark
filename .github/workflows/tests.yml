@@ -4,12 +4,22 @@ on:
   push:
   pull_request:
 
+concurrency:
+  group: tests-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -17,11 +27,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
           cache: pip
 
       - name: Install package and development dependencies
         run: python -m pip install -e ".[dev]"
+
+      - name: Check installed dependency consistency
+        run: python -m pip check
+
+      - name: Verify package imports
+        run: python -c "import qaoa_reliability"
 
       - name: Lint
         run: ruff check .
@@ -30,5 +46,4 @@ jobs:
         run: ruff format --check .
 
       - name: Test
-        run: pytest
-
+        run: pytest -q
