@@ -1,0 +1,60 @@
+{
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "family": "erdos_renyi",
+  "generation_parameters": {
+    "accepted_attempt": 1,
+    "edge_probability": 0.4,
+    "effective_seed": 2253045827,
+    "max_attempts": 100,
+    "require_connected": true
+  },
+  "generation_seed": 1002,
+  "graph_id": "sha256:723cc0193a0f0a918d5bc167cfdb13db44091669a04caf7b238e4103671fcb87",
+  "n_nodes": 8,
+  "schema_version": "1.0"
+}

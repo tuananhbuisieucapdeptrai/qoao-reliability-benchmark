@@ -17,6 +17,7 @@ dependencies = [
   # NetworkX 3.7 changed stochastic_block_model output for the same integer seed.
   "networkx==3.4.2",
   "numpy>=2.0,<3",
+  "scipy>=1.14,<2",
 ]
 
 [project.optional-dependencies]
@@ -26,6 +27,10 @@ dev = [
 ]
 qiskit = [
   "qiskit>=2,<3",
+]
+research = [
+  "matplotlib>=3.9,<4",
+  "scikit-learn>=1.5,<2",
 ]
 
 [tool.setuptools.packages.find]

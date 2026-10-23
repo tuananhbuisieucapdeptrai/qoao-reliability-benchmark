@@ -1,0 +1,24 @@
+{
+  "errors": [],
+  "expected": {
+    "exact_results": 40,
+    "feature_records": 40,
+    "graphs": 40,
+    "run_checkpoint_metrics": 1200,
+    "runs": 400,
+    "seed_aggregate_metrics": 120
+  },
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3",
+  "maximum_objective_evaluations": 40000,
+  "observed": {
+    "exact_results": 40,
+    "feature_records": 40,
+    "graphs": 40,
+    "run_checkpoint_metrics": 1200,
+    "runs": 400,
+    "seed_aggregate_metrics": 120,
+    "trajectory_records": 16370
+  },
+  "passed": true,
+  "schema_version": "1.0"
+}

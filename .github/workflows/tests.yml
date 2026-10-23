@@ -31,13 +31,13 @@ jobs:
           cache: pip
 
       - name: Install package and development dependencies
-        run: python -m pip install -e ".[dev]"
+        run: python -m pip install -e ".[dev,qiskit]"
 
       - name: Check installed dependency consistency
         run: python -m pip check
 
       - name: Verify package imports
-        run: python -c "import qaoa_reliability"
+        run: python -c "import qaoa_reliability; import qiskit"
 
       - name: Lint
         run: ruff check .

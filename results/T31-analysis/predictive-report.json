@@ -1,0 +1,59 @@
+{
+  "analysis": "T31 held-out-family predictive pilot",
+  "artifacts": {
+    "fold-metrics.csv": "700e0b9cf2fe12034236178fe1499e81bb5f4ed489f8159e2190e2c53ef61184",
+    "held-out-family-predictions.csv": "bc5aa37239e040d82b717e30ad7ad9fb608a7621efa306ad1b7219ccdc65ab5b",
+    "held-out-family-predictions.png": "8c3d049a1752cf89e0ff5b8ada47ba65074216a79ec6630fc56071090580c8fc",
+    "held-out-family-predictions.svg": "4880939b7d8f2415294aca9cecf01bf7d887ae895d557926d73d8dd5efb15dd9",
+    "standardized-coefficients.csv": "14f10a690882e9c8e7c093dd8e8accec3cfda0cd68cd0bf37cc31fc2472f583c"
+  },
+  "feature_sets": {
+    "interpretable_graph_features": [
+      "n_nodes",
+      "density",
+      "degree_std",
+      "triangle_count",
+      "average_clustering",
+      "degree_assortativity",
+      "diameter"
+    ],
+    "size_density_baseline": [
+      "n_nodes",
+      "density"
+    ]
+  },
+  "inputs": {
+    "features_sha256": "27d2e10d5118cbec681461b7b976219bc462d25ada144346b3309db678ddc7a4",
+    "seed_summaries_sha256": "69d60971c077491afa0ad64658fb4dd552c4828f58873c821e32fd0f4f02ad84"
+  },
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3",
+  "paired_mae_improvement_baseline_minus_expanded": {
+    "ci95_high": 0.00450011375251385,
+    "ci95_low": -0.013950254022490028,
+    "mean": -0.004643965774464335,
+    "resamples": 10000,
+    "seed": 20261018
+  },
+  "pooled_metrics": {
+    "interpretable_graph_features": {
+      "mae": 0.04260992111593026,
+      "r2": -0.32666147071221974,
+      "rmse": 0.05205858048073881
+    },
+    "size_density_baseline": {
+      "mae": 0.03796595534146593,
+      "r2": -0.1395042065768739,
+      "rmse": 0.04824699064659083
+    }
+  },
+  "source_dataset_sha256": "06f09ab1aab89565893451216fca1c35458c6a2f818a76403f2e91a233e1f060",
+  "target": "mean_normalized_gap_at_budget_100",
+  "validation": {
+    "estimator": "Ridge(alpha=1.0)",
+    "folds": 4,
+    "method": "leave-one-family-out",
+    "preprocessing": "median imputation and standardization fit on training fold only",
+    "test_graphs_per_fold": 10,
+    "train_graphs_per_fold": 30
+  }
+}

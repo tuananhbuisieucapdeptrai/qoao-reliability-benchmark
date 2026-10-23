@@ -1,0 +1,76 @@
+{
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      9
+    ]
+  ],
+  "family": "random_regular",
+  "generation_parameters": {
+    "accepted_attempt": 0,
+    "degree": 3,
+    "effective_seed": 1022568416,
+    "max_attempts": 100,
+    "require_connected": true
+  },
+  "generation_seed": 2010,
+  "graph_id": "sha256:413e11c05c5ad6b1188ee2a5f62d07d8c636b6caf39ae3b1d5a7db1be8c553ef",
+  "n_nodes": 10,
+  "schema_version": "1.0"
+}

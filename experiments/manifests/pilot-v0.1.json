@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "name": "qaoa-reliability-pilot-v0.1",
+  "protocol_version": "0.1",
+  "graph_batches": [
+    {
+      "family": "erdos_renyi",
+      "n_nodes": 8,
+      "seeds": [1000, 1001, 1002, 1003, 1004],
+      "parameters": {"edge_probability": 0.4}
+    },
+    {
+      "family": "erdos_renyi",
+      "n_nodes": 10,
+      "seeds": [1010, 1011, 1012, 1013, 1014],
+      "parameters": {"edge_probability": 0.4}
+    },
+    {
+      "family": "random_regular",
+      "n_nodes": 8,
+      "seeds": [2000, 2001, 2002, 2003, 2004],
+      "parameters": {"degree": 3}
+    },
+    {
+      "family": "random_regular",
+      "n_nodes": 10,
+      "seeds": [2010, 2011, 2012, 2013, 2014],
+      "parameters": {"degree": 3}
+    },
+    {
+      "family": "watts_strogatz",
+      "n_nodes": 8,
+      "seeds": [3000, 3001, 3002, 3003, 3004],
+      "parameters": {"neighborhood_size": 4, "rewiring_probability": 0.25}
+    },
+    {
+      "family": "watts_strogatz",
+      "n_nodes": 10,
+      "seeds": [3010, 3011, 3012, 3013, 3014],
+      "parameters": {"neighborhood_size": 4, "rewiring_probability": 0.25}
+    },
+    {
+      "family": "stochastic_block_model",
+      "n_nodes": 8,
+      "seeds": [4000, 4001, 4002, 4003, 4004],
+      "parameters": {
+        "block_sizes": [4, 4],
+        "probability_matrix": [[0.8, 0.2], [0.2, 0.8]]
+      }
+    },
+    {
+      "family": "stochastic_block_model",
+      "n_nodes": 10,
+      "seeds": [4010, 4011, 4012, 4013, 4014],
+      "parameters": {
+        "block_sizes": [5, 5],
+        "probability_matrix": [[0.8, 0.2], [0.2, 0.8]]
+      }
+    }
+  ],
+  "optimizer_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "depths": [1],
+  "budgets": [25, 50, 100],
+  "evaluator": "numpy_statevector@1.0",
+  "optimizer": "scipy_cobyla",
+  "target_ratio": 0.95,
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3"
+}

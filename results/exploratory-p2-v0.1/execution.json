@@ -1,0 +1,39 @@
+{
+  "budgets": [
+    25,
+    50,
+    100
+  ],
+  "completed_at_utc": "2026-10-18T09:27:43.875152+00:00",
+  "counts": {
+    "exact_results": 8,
+    "feature_records": 8,
+    "graphs": 8,
+    "run_checkpoint_metrics": 120,
+    "runs": 40,
+    "seed_aggregate_metrics": 24,
+    "trajectory_records": 3963
+  },
+  "depths": [
+    2
+  ],
+  "evaluator": "numpy_statevector@1.0",
+  "graph_count": 8,
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3",
+  "manifest_path": "experiments/manifests/pilot-v0.1.json",
+  "optimizer": "scipy_cobyla",
+  "optimizer_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "qa_passed": true,
+  "runtime_seconds": 23.702055333007593,
+  "schema_version": "1.0",
+  "scope": "exploratory-p2",
+  "started_at_utc": "2026-10-18T09:27:20.174228+00:00",
+  "status": "completed",
+  "target_ratio": 0.95
+}

@@ -1,0 +1,97 @@
+{
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "family": "watts_strogatz",
+  "generation_parameters": {
+    "accepted_attempt": 0,
+    "effective_seed": 689871540,
+    "max_attempts": 100,
+    "neighborhood_size": 4,
+    "require_connected": true,
+    "rewiring_probability": 0.25
+  },
+  "generation_seed": 3013,
+  "graph_id": "sha256:96286abf881d659a8174e5b1bc5acf9fc3239c96777eb856173b01e32254bb85",
+  "n_nodes": 10,
+  "schema_version": "1.0"
+}

@@ -1,0 +1,77 @@
+{
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "family": "stochastic_block_model",
+  "generation_parameters": {
+    "accepted_attempt": 0,
+    "block_sizes": [
+      4,
+      4
+    ],
+    "effective_seed": 285823341,
+    "max_attempts": 100,
+    "probability_matrix": [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.2,
+        0.8
+      ]
+    ],
+    "require_connected": true
+  },
+  "generation_seed": 4003,
+  "graph_id": "sha256:841be5f2ce3b6e4386ae699a2d8536701a625a05c60bbb53650d7634e735f499",
+  "n_nodes": 8,
+  "schema_version": "1.0"
+}

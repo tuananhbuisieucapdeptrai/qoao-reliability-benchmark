@@ -2,9 +2,38 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 .venv/
 dist/
 build/
 *.egg-info/
 .DS_Store
+*.log
+
+# Local experiment workspaces. Curated analysis outputs below are retained as
+# compact, reviewer-facing evidence; raw pilot data is published under releases/.
+results/*
+!results/T29-analysis/
+!results/T29-analysis/**
+!results/T30-analysis/
+!results/T30-analysis/**
+!results/T31-analysis/
+!results/T31-analysis/**
+!results/exploratory-p2-v0.1/
+results/exploratory-p2-v0.1/*
+!results/exploratory-p2-v0.1/execution.json
+
+# Submission media and local rendering helpers are not part of the package.
+media/
+scripts/
+*.mp4
+*.mov
+*.webm
+
+# Internal application working notes; public scientific evidence stops at T32.
+docs/T3[3-8]-*.md
+docs/decisions/
+docs/smoke-*.md
 

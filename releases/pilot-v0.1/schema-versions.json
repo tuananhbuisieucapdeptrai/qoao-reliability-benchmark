@@ -1,0 +1,82 @@
+{
+  "exact_result": {
+    "required": [
+      "graph_id",
+      "optimum",
+      "representative_bitstring",
+      "n_optimal_assignments",
+      "assignments_evaluated",
+      "solver",
+      "solver_version"
+    ],
+    "version": "1.0"
+  },
+  "graph_feature": {
+    "required": [
+      "feature_schema_version",
+      "graph_id",
+      "family",
+      "n_nodes",
+      "n_edges"
+    ],
+    "version": "1.0"
+  },
+  "graph_record": {
+    "required": [
+      "schema_version",
+      "graph_id",
+      "family",
+      "n_nodes",
+      "edges",
+      "generation_seed",
+      "generation_parameters"
+    ],
+    "version": "1.0"
+  },
+  "run_checkpoint_metrics": {
+    "required": [
+      "run_id",
+      "graph_id",
+      "depth",
+      "optimizer_seed",
+      "budget",
+      "evaluations_available",
+      "best_objective",
+      "exact_optimum",
+      "regret",
+      "normalized_gap",
+      "success"
+    ],
+    "version": "1.0"
+  },
+  "seed_aggregate_metrics": {
+    "required": [
+      "graph_id",
+      "depth",
+      "budget",
+      "n_seeds",
+      "mean_best_objective",
+      "mean_normalized_gap",
+      "success_probability"
+    ],
+    "version": "1.0"
+  },
+  "trajectory_record": {
+    "required": [
+      "schema_version",
+      "run_id",
+      "evaluation_index",
+      "timestamp_utc",
+      "graph_id",
+      "depth",
+      "optimizer_seed",
+      "parameters",
+      "objective",
+      "evaluation_id",
+      "evaluator",
+      "evaluator_version",
+      "backend_metadata"
+    ],
+    "version": "1.0"
+  }
+}

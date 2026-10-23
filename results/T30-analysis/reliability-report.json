@@ -1,0 +1,38 @@
+{
+  "analysis": "T30 reliability analysis",
+  "artifacts": {
+    "png": {
+      "path": "results/T30-analysis/reliability-by-family.png",
+      "sha256": "ea06fcf6659dd5f7d0c336bfd05af2751b1e7d5e283a32dc1d398df3a2d899b9"
+    },
+    "svg": {
+      "path": "results/T30-analysis/reliability-by-family.svg",
+      "sha256": "af29c5166dabd35dbf442c17e6891b00b61f9d7db68f4fdbaa7514da9a276816"
+    },
+    "table": {
+      "path": "results/T30-analysis/family-reliability.csv",
+      "sha256": "e483552411457ea8ae248f0d76ba645505cd9cfe0338e2cad7e35e845eb6fef9"
+    }
+  },
+  "evaluations_to_target_estimable": false,
+  "inputs": {
+    "run_checkpoints_sha256": "e0e2596dcac4e9f0b83b3b74a9a1fc124f98fd5364b9165e5afe5d56935fb307",
+    "seed_summaries_sha256": "69d60971c077491afa0ad64658fb4dd552c4828f58873c821e32fd0f4f02ad84"
+  },
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3",
+  "sample_counts": {
+    "graphs": 40,
+    "graphs_per_family": 10,
+    "runs": 400,
+    "runs_per_family": 100,
+    "seeds_per_graph": 10
+  },
+  "source_dataset_sha256": "06f09ab1aab89565893451216fca1c35458c6a2f818a76403f2e91a233e1f060",
+  "total_successes": 0,
+  "uncertainty": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261018,
+    "gap_and_seed_sensitivity": "95% graph-level percentile bootstrap",
+    "success_probability": "95% run-level Wilson interval"
+  }
+}

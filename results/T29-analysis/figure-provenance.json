@@ -1,0 +1,51 @@
+{
+  "analysis": "T29 descriptive pilot figures",
+  "figure_data": {
+    "path": "results/T29-analysis/figure-data.csv",
+    "rows": 120,
+    "sha256": "dc06173223d4a77c12a14478e293677ab14633202b9ef9396573b66b5c291169"
+  },
+  "input_run_metrics": "releases/pilot-v0.1/metrics/run-checkpoints.jsonl",
+  "input_run_metrics_sha256": "e0e2596dcac4e9f0b83b3b74a9a1fc124f98fd5364b9165e5afe5d56935fb307",
+  "manifest_id": "sha256:84a992b08c73e3988cf4773c2b919e930e5ac2e6bd361970bad411f6698d80f3",
+  "outputs": [
+    {
+      "path": "results/T29-analysis/figure-1-objective-vs-budget.png",
+      "sha256": "0aec7a51a8e008a3ae868bb366911c0bf02289312a4631096474680ffe4014d5"
+    },
+    {
+      "path": "results/T29-analysis/figure-1-objective-vs-budget.svg",
+      "sha256": "fe90a1072bd844736e9c917a391119b888fa28bd10dcdce8d8388c297c4c0b6c"
+    },
+    {
+      "path": "results/T29-analysis/figure-2-regret-vs-budget.png",
+      "sha256": "5a8978d7a6bc366af8b5e693ae0c3f327fd69e939ee7990122ce0d7b2a7568d6"
+    },
+    {
+      "path": "results/T29-analysis/figure-2-regret-vs-budget.svg",
+      "sha256": "124e3f2973000a65b03934f61e45db735e2494fc7991215ee0def2ed608e6482"
+    },
+    {
+      "path": "results/T29-analysis/figure-3-family-distributions.png",
+      "sha256": "ff1cdb32859f3badaaf3d8a2a8221106c7f260de85660f6ce1021a5f972fd9d2"
+    },
+    {
+      "path": "results/T29-analysis/figure-3-family-distributions.svg",
+      "sha256": "e8e3f890ae492cb7cf092a7c97ed73bacdccb5a1954c672b67065fcb2f22d82f"
+    }
+  ],
+  "sample_counts": {
+    "graphs": 40,
+    "graphs_per_family": 10,
+    "run_checkpoint_rows": 1200,
+    "runs": 400,
+    "runs_per_family": 100
+  },
+  "source_dataset_sha256": "06f09ab1aab89565893451216fca1c35458c6a2f818a76403f2e91a233e1f060",
+  "uncertainty": {
+    "confidence": 0.95,
+    "method": "percentile bootstrap of graph-level seed means",
+    "resamples": 10000,
+    "seed": 20261018
+  }
+}
